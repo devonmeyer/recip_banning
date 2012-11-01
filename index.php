@@ -12,7 +12,7 @@ require 'vendor/autoload.php';
 $app = new \Slim\Slim();
 
 $app->get("/", function(){
-    $mysqli = new mysqli("10.20.50.41", "ashetler", "BacRuTe2", "na_vbulletin", 3306 );
+    $mysqli = new mysqli("10.20.50.41", "username", "password", "na_vbulletin", 3306 );
 
     if ($mysqli->connect_errno) {
         printf("Connect failed: %s\n", $mysqli->connect_error);
